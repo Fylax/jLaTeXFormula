@@ -18,6 +18,7 @@ You have to prepare the HTML hosting the plugin in this way:
 Symbols Groups
 --------------
 KLatexFormula has 7 groups. Due to the KaTeX limitations, I have actually used only 5 groups that are:
+
 1. Relation Symbols
 2. Arrow Symbols
 3. Miscellaneous Symbols
