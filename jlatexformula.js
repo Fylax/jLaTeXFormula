@@ -1,24 +1,23 @@
 /* 
-* Copyright (C) 2014  Fylax
-* 
-* This program is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public License
-* as published by the Free Software Foundation; either version 2
-* of the License, or (at your option) any later version.
-* 
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-* GNU General Public License for more details.
-* 
-* You should have received a copy of the GNU General Public License
-* along with this program; if not, write to the Free Software
-* Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-*/
+ * Copyright (C) 2014 Nico Caprioli
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 window.onload = function () {
     var symbols = [
         [
-			"pm",
+            "pm",
             "cap",
             "diamond",
             "oplus",
@@ -266,50 +265,50 @@ window.onload = function () {
             //"boxbslash",
             //"boxcircle",
             "boxdot"//,
-            //"boxempty",
-            //"boxslash",
-            //"curlyveedownarrow",
-            //"curlyveeuparrow",
-            //"curlywedgedownarrow",
-            //"curlywedgeuparrow",
-            //"fatbslash",
-            //"fatsemi",
-            //"fatslash",
-            //"interleave",
-            //"leftslice",
-            //"merge",
-            //"minuso",
-            //"moo",
-            //"nplus",
-            //"obar",
-            //"oblong",
-            //"obslash",
-            //"ogreaterthan",
-            //"olessthan",
-            //"ovee",
-            //"owedge",
-            //"rightslice",
-            //"sslash",
-            //"talloblong",
-            //"varbigcirc",
-            //"varcurlyvee",
-            //"varcurlywedge",
-            //"varoast",
-            //"varobar",
-            //"varobslash",
-            //"varocircle",
-            //"varodot",
-            //"varogreaterthan",
-            //"varolessthan",
-            //"varominus",
-            //"varoplus",
-            //"varoslash",
-            //"varotimes",
-            //"varovee",
-            //"varowedge",
+                    //"boxempty",
+                    //"boxslash",
+                    //"curlyveedownarrow",
+                    //"curlyveeuparrow",
+                    //"curlywedgedownarrow",
+                    //"curlywedgeuparrow",
+                    //"fatbslash",
+                    //"fatsemi",
+                    //"fatslash",
+                    //"interleave",
+                    //"leftslice",
+                    //"merge",
+                    //"minuso",
+                    //"moo",
+                    //"nplus",
+                    //"obar",
+                    //"oblong",
+                    //"obslash",
+                    //"ogreaterthan",
+                    //"olessthan",
+                    //"ovee",
+                    //"owedge",
+                    //"rightslice",
+                    //"sslash",
+                    //"talloblong",
+                    //"varbigcirc",
+                    //"varcurlyvee",
+                    //"varcurlywedge",
+                    //"varoast",
+                    //"varobar",
+                    //"varobslash",
+                    //"varocircle",
+                    //"varodot",
+                    //"varogreaterthan",
+                    //"varolessthan",
+                    //"varominus",
+                    //"varoplus",
+                    //"varoslash",
+                    //"varotimes",
+                    //"varovee",
+                    //"varowedge",
         ],
         [
-			"leftarrow",
+            "leftarrow",
             //"longeleftarrow",
             "uparrow",
             "Leftarrow",
@@ -380,68 +379,68 @@ window.onload = function () {
             "xrightarrow[xyz]{abc}"
         ],
         [
-           "ldots",
-           "cdots",
-           "vdots",
-           "ddots",
-           "aleph",
-           "prime",
-           "forall",
-           "infty",
-           "hbar",
-           "emptyset",
-           "exists",
-           "imath",
-           "nabla",
-           "neg",
-           "jmath",
-           "surd",
-           "flat",
-           "triangle",
-           "ell",
-           "top",
-           "natural",
-           "clubsuit",
-           "wp",
-           "bot",
-           "sharp",
-           "diamondsuit",
-           "Re\\left(z \\right )",
-           "backslash",
-           "heartsuit",
-           "Im\\left(z \\right )",
-           "angle",
-           "partial",
-           "spadesuit",
-           "hslash",
-           "vartriangle",
-           "triangledown",
-           "square",
-           "lozenge",
-           "circledS",
-           "measuredangle",
-           "nexists",
-           "mho",
-           "Finv",
-           "Game",
-           "Bbbk",
-           "backprime",
-           "varnothing",
-           "blacktriangle",
-           "blacktriangledown",
-           "blacksquare",
-           "blacklozenge",
-           "bigstar",
-           "sphericalangle",
-           "complement",
-           "eth",
-           "diagup",
-           "diagdown",
-           //"laplacian",
-           //"varlaplacian",
-           //"coloneqq",
-           //"Coloneqq",
-           "stackrel{\\text{def}}{=}"
+            "ldots",
+            "cdots",
+            "vdots",
+            "ddots",
+            "aleph",
+            "prime",
+            "forall",
+            "infty",
+            "hbar",
+            "emptyset",
+            "exists",
+            "imath",
+            "nabla",
+            "neg",
+            "jmath",
+            "surd",
+            "flat",
+            "triangle",
+            "ell",
+            "top",
+            "natural",
+            "clubsuit",
+            "wp",
+            "bot",
+            "sharp",
+            "diamondsuit",
+            "Re\\left(z \\right )",
+            "backslash",
+            "heartsuit",
+            "Im\\left(z \\right )",
+            "angle",
+            "partial",
+            "spadesuit",
+            "hslash",
+            "vartriangle",
+            "triangledown",
+            "square",
+            "lozenge",
+            "circledS",
+            "measuredangle",
+            "nexists",
+            "mho",
+            "Finv",
+            "Game",
+            "Bbbk",
+            "backprime",
+            "varnothing",
+            "blacktriangle",
+            "blacktriangledown",
+            "blacksquare",
+            "blacklozenge",
+            "bigstar",
+            "sphericalangle",
+            "complement",
+            "eth",
+            "diagup",
+            "diagdown",
+            //"laplacian",
+            //"varlaplacian",
+            //"coloneqq",
+            //"Coloneqq",
+            "stackrel{\\text{def}}{=}"
         ],
         [
             "vert",
@@ -486,11 +485,11 @@ window.onload = function () {
             "tilde{a}",
             "acute{a}",
             "grave{a}"//,
-            //"ket{\\psi}",
-            //"bra{\\psi}",
-            //"braket{\\phi}{\\psi}",
-            //"matrixel{\\phi}{H}{\\psi}",
-            //"slashed{a}"
+                    //"ket{\\psi}",
+                    //"bra{\\psi}",
+                    //"braket{\\phi}{\\psi}",
+                    //"matrixel{\\phi}{H}{\\psi}",
+                    //"slashed{a}"
         ],
         [
             "alpha",
@@ -534,61 +533,220 @@ window.onload = function () {
             "Psi",
             "Omega"
         ],
-		[
-			"\\a^{b}",
-			"\\a_{b}",
-			"\\a_{b}^{c}",
-			"frac{a}{b}",
-			"binom{a}{b}",
-			"sin{x}",
-			"cos{x}",
-			"tan{x}",
-			"cot{x}",
-			"sec{x}",
-			"csc{x}",
-			"lim_{x \\to 0}f(x)"
-		]
+        [
+            "\\a^{b}",
+            "\\a_{b}",
+            "\\a_{b}^{c}",
+            "frac{a}{b}",
+            "binom{a}{b}",
+            "sin{x}",
+            "cos{x}",
+            "tan{x}",
+            "cot{x}",
+            "sec{x}",
+            "csc{x}",
+            "sinh{x}",
+            "cosh{x}",
+            "tanh{x}",
+            "coth{x}",
+            "lim_{x \\to 0}f(x)",
+            "limsup_{x \\to 0}f(x)",
+            "liminf_{x \\to 0}f(x)",
+            "sup_{x \\in A}f(x)",
+            "inf_{x \\in A}f(x)",
+            "min_{x \\in A}f(x)",
+            "max_{x \\in A}f(x)",
+            "log{x}",
+            "ln{x}",
+            "lg{x}",
+            "log_{n}{x}",
+            "exp{x}",
+            "arcsin{x}",
+            "arccos{x}",
+            "arctan{x}",
+            "ker{x}",
+            "deg{x}",
+            "gcd{x}",
+            "Pr{x}",
+            "det{x}",
+            "hom{x}",
+            "arg{x}",
+            "dim{x}"
+        ],
+        [
+            "begin{matrix}\n1 & 2 \\\\\n3 & 4\n\\end{matrix}",
+            "begin{bmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{bmatrix}",
+            "begin{pmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{pmatrix}",
+            "left(\\begin{smallmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{smallmatrix}\\right)",
+            "begin{cases}\nx=2 \\\\\ny=3\n\\end{cases}",
+            "begin{vmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{vmatrix}",
+            "begin{Bmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{Bmatrix}",
+            "begin{Vmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{Vmatrix}"
+        ],
+        [
+            "mathcal{A}",
+            "mathcal{B}",
+            "mathcal{C}",
+            "mathcal{D}",
+            "mathcal{E}",
+            "mathcal{F}",
+            "mathcal{G}",
+            "mathcal{H}",
+            "mathcal{I}",
+            "mathcal{J}",
+            "mathcal{K}",
+            "mathcal{L}",
+            "mathcal{M}",
+            "mathcal{N}",
+            "mathcal{O}",
+            "mathcal{P}",
+            "mathcal{Q}",
+            "mathcal{R}",
+            "mathcal{S}",
+            "mathcal{T}",
+            "mathcal{U}",
+            "mathcal{V}",
+            "mathcal{W}",
+            "mathcal{X}",
+            "mathcal{Y}",
+            "mathcal{Z}",
+            "mathscr{A}",
+            "mathscr{B}",
+            "mathscr{C}",
+            "mathscr{D}",
+            "mathscr{E}",
+            "mathscr{F}",
+            "mathscr{G}",
+            "mathscr{H}",
+            "mathscr{I}",
+            "mathscr{J}",
+            "mathscr{K}",
+            "mathscr{L}",
+            "mathscr{M}",
+            "mathscr{N}",
+            "mathscr{O}",
+            "mathscr{P}",
+            "mathscr{Q}",
+            "mathscr{R}",
+            "mathscr{S}",
+            "mathscr{T}",
+            "mathscr{U}",
+            "mathscr{V}",
+            "mathscr{W}",
+            "mathscr{X}",
+            "mathscr{Y}",
+            "mathscr{Z}",
+            "mathbb{A}",
+            "mathbb{B}",
+            "mathbb{C}",
+            "mathbb{D}",
+            "mathbb{E}",
+            "mathbb{F}",
+            "mathbb{G}",
+            "mathbb{H}",
+            "mathbb{I}",
+            "mathbb{J}",
+            "mathbb{K}",
+            "mathbb{L}",
+            "mathbb{M}",
+            "mathbb{N}",
+            "mathbb{O}",
+            "mathbb{P}",
+            "mathbb{Q}",
+            "mathbb{R}",
+            "mathbb{S}",
+            "mathbb{T}",
+            "mathbb{U}",
+            "mathbb{V}",
+            "mathbb{W}",
+            "mathbb{X}",
+            "mathbb{Y}",
+            "mathbb{Z}",
+            "mathbf{A}",
+            "mathbf{B}",
+            "mathbf{C}",
+            "mathbf{D}",
+            "mathbf{E}",
+            "mathbf{F}",
+            "mathbf{G}",
+            "mathbf{H}",
+            "mathbf{I}",
+            "mathbf{J}",
+            "mathbf{K}",
+            "mathbf{L}",
+            "mathbf{M}",
+            "mathbf{N}",
+            "mathbf{O}",
+            "mathbf{P}",
+            "mathbf{Q}",
+            "mathbf{R}",
+            "mathbf{S}",
+            "mathbf{T}",
+            "mathbf{U}",
+            "mathbf{V}",
+            "mathbf{W}",
+            "mathbf{X}",
+            "mathbf{Y}",
+            "mathbf{Z}",
+            "mathfrak{A}",
+            "mathfrak{B}",
+            "mathfrak{C}",
+            "mathfrak{D}",
+            "mathfrak{E}",
+            "mathfrak{F}",
+            "mathfrak{G}",
+            "mathfrak{H}",
+            "mathfrak{I}",
+            "mathfrak{J}",
+            "mathfrak{K}",
+            "mathfrak{L}",
+            "mathfrak{M}",
+            "mathfrak{N}",
+            "mathfrak{O}",
+            "mathfrak{P}",
+            "mathfrak{Q}",
+            "mathfrak{R}",
+            "mathfrak{S}",
+            "mathfrak{T}",
+            "mathfrak{U}",
+            "mathfrak{V}",
+            "mathfrak{W}",
+            "mathfrak{X}",
+            "mathfrak{Y}",
+            "mathfrak{Z}",
+            "text{[regular text]}",
+            "boldsymbol{[bold\ symbol]}",
+            "textit{[Italic Text]}"
+        ]
     ],
-            i = 0;
+            i = 0,
+            formula_container = document.getElementById("formula-container"),
+            group_select = document.getElementById("group-select");
     for (; i < symbols.length; ++i) {
-        var j = 0;
+        var j = 0,
+                btn;
         for (; j < symbols[i].length; ++j) {
-            var btn = document.getElementById("symbols-" + i).appendChild(document.createElement("button"));
-            btn.id = "formula-" + symbols[i][j];
-            btn.className = "formula-btn";
-			if (symbols[i][j].substring(0,1) === "\\") {
-				btn.innerHTML="{tex}" + symbols[i][j].substring(1) + "{/tex}";
-			} else {
-				btn.innerHTML="{tex}\\"  + symbols[i][j] + "{/tex}";
-			}
+            btn = document.getElementById("symbols-" + i).appendChild(document.createElement("button"));
+            btn.setAttribute("data-formula", symbols[i][j]);
+            btn.className = "formula-btn group-" + i;
+            btn.onclick = function () {
+                formula_container.value = (this.getAttribute("data-formula")[0] === "\\") ? formula_container.value + this.getAttribute("data-formula").substring(1) : formula_container.value + "\\" + this.getAttribute("data-formula");
+                formula_container.onkeyup();
+            };
+            btn.innerHTML = (symbols[i][j][0] === "\\") ? "{tex}" + symbols[i][j].substring(1) + "{/tex}" : "{tex}\\" + symbols[i][j] + "{/tex}";
         }
     }
     delete symbols;
-    var btns = document.getElementsByClassName("formula-btn"),
-            formula_container = document.getElementById("formula-container"),
-            i = 0;
-    for (; i < btns.length; ++i) {
-        btns[i].onclick = function () {
-			if(this.id.substring(8,9) === "\\") {
-				formula_container.value = formula_container.value + this.id.substring(9);
-			} else {
-				formula_container.value = formula_container.value + "\\" + this.id.substring(8);
-			}
-            formula_container.onkeyup();
-        };
-    }
+    formula_container.value = "";
     formula_container.onkeyup = function () {
-            container = document.getElementById("rendered-container").innerHTML = "{tex}" + this.value + "{/tex}";
-			MathJax.Hub.Typeset()
+        document.getElementById("rendered-container").innerHTML = "{tex}" + formula_container.value + "{/tex}";
+        MathJax.Hub.Typeset();
     };
-    document.getElementById("group-select").onchange = function () {
+    group_select.onchange = function () {
         var i = 0;
-        for (; i < this.length; ++i) {
-            if (i === this.selectedIndex) {
-                document.getElementById("symbols-" + i).style.display = "";
-            } else {
-                document.getElementById("symbols-" + i).style.display = "none";
-            }
+        for (; i < group_select.length; ++i) {
+            var group = document.getElementById("symbols-" + i);
+            group.style.display = (i === group_select.selectedIndex) ? "" : "none";
         }
     };
 };
