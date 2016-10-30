@@ -1,41 +1,38 @@
 jLaTeXFormula
 ==========
+A TypeScript plugin that helps you in building your LaTeX formula.
 
-A JavaScript plugin that helps you in building your LaTeX formula.
 
 It is inspired from [KLatexFormula](http://klatexformula.sourceforge.net/) from which it takes the subdivision and the various formulas.
 
+In order to work, this plugin needs [MathJax](http://www.mathjax.org/) which is a dependency.
+
 Usage
 -------
-In order to work, this plugin needs imported in the same HTML page [MathJax](http://www.mathjax.org/).
+It exposes only a constructor that does all the magic for you.
 
-You have to prepare the HTML hosting the plugin in this way:
-* div with `id="rendered-container"` where the rendered formulas will be shown.
-* textarea with `id="formula-container"` where the various button-helper and the user will write.
-* select with `id="group-select"` where the various groups are chosen.
-* span/div/whatever-you-want with `id="symbols-[0-7]"` where the buttons of each group are shown.
+#### Parameters
+| Name | Type | Description |
+| ---- | ---- | ---- |
+| rendered | string | HTMLDivElement &#124; HTMLSpanElement| Where formulas will be rendered (DOM Element or ID). |
+| input | string &#124; HTMLTextAreaElement| Where user and jLaTeXFormula will write formulas DOM Element (DOM Element or ID). |
+| groups | string &#124; HTMLSelectElement| Select for swapping between groups (DOM Element or ID). |
+| groupContainer | string &#124; HTMLDivElement &#124; HTMLSpanElement| Where buttons (one each symbols) will be placed (DOM Element or ID). |
+| localization | [string, string, string, string, string, string, string, string]| Localized which name, in an ordered list:<ol><li>Relation Symbols</li><li>Arrow Symbols</li><li>Miscellaneous Symbols</li><li>Delimiters and Accents</li><li>Greek Alphabet</li><li>Functions</li><li>Matrices & Systems</li><li>Math Alphabets and Text</li></ol> |
+| openDelimiter = "$$" | string| Start LaTeX formula delimiter, useful only in case of conflicts. |
+| closeDelimiter = "$$" | string| End LaTeX formula delimiter, useful only in case of conflicts. |
 
-Please **do note** that you have to set MathJax delimiters to `{tex}` and `{/tex}` to make it work. Take a look to the demo or to MathJax documentation to learn how to achieve it.
-
-Symbols Groups
--------------------
-jLaTeXFormula has 6 groups:
-
-1. Relation Symbols
-2. Arrow Symbols
-3. Miscellaneous Symbols
-4. Delimiters and Accents
-5. Greek Alphabet
-6. Functions
-7. Matrices & Systems
-8. Math Alphabets and Text
+#### Example
+A demo has been provided in order to help you undersand how it does work
 
 Styling
 --------
+jLaTeXFormula comes with no CSS so that there is complete freedom in styling and embedding it to your website, but provides several useful classes:
+* Each group of buttons container has class `fjslg + i`, where `i` is group zero based offset.
+* Each button has class `fjslgb` and `fjslgb + i+ j` where `i` is group zero based offset and `j` in button zero based offset within the group.
 
-jLaTeXFormula comes with no CSS so that there is complete freedom in styling and embedding it to your website.
+Compiled Code
+--------
+A compiled ES5 compliant minified JavaScript version has been provided as well in order to let you use it directly.
 
-* `#rendered-container` contains the formulas rendered via CSS, so you can set color, font-size and whatnot to this element to change how formulas are rendered.
-* All helper buttons have classname `.formula-btn`, so you can easly set dimensions, colors and so on to them.
-* Buttons are also grouped, so any button in n+1<sup>th</sup> group will also have a `group-n` classname.
-* Textarea and Select speak for themselves and there's no need to explain how to manage them.
+Partially generated using [TypeDoc](http://typedoc.org/)

@@ -2,19 +2,7 @@
 <html>
     <head>
         <title>jLaTeXFormula Demo</title>
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({
-            extensions: ["tex2jax.js"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-            tex2jax: {
-            inlineMath: [ ['{tex}','{/tex}'], ["\\(","\\)"] ],
-            displayMath: [ ['{tex}','{/tex}'], ["\\(","\\)"] ],
-            processEscapes: true
-            },
-            "HTML-CSS": { availableFonts: ["TeX"] }
-            });
-        </script>
-        <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+        <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
         <script src="jlatexformula.js"></script>
     </head>
     <body>
@@ -22,25 +10,13 @@
             <div id="rendered-container"></div>
             <textarea id="formula-container"></textarea>
             <select id="group-select">
-                <option selected>Relation Symbols</option>
-                <option>Arrow Symbols</option>
-                <option>Miscellaneous Symbols</option>
-                <option>Delimiters and Accents</option>
-                <option>Greek Alphabet</option>
-                <option>Functions</option>
-                <option>Matrices &amp; Systems</option>
-                <option>Math Alphabets and Text</option>
             </select>
-            <span id="symbols-0"></span>
-            <span id="symbols-1" style="display:none"></span>
-            <span id="symbols-2" style="display:none"></span>
-            <span id="symbols-3" style="display:none"></span>
-            <span id="symbols-4" style="display:none"></span>
-            <span id="symbols-5" style="display:none"></span>
-            <span id="symbols-6" style="display:none">
-                <span><b>Info:</b> &amp; adds a column, \\ adds a row.</span>
-            </span>
-            <span id="symbols-7" style="display:none"></span>
         </div>
+        <span id="group-container"></span>
+        <script>
+            var lat = new Fylax.jLaTeXFormula("rendered-container", "formula-container", "group-select", "group-container",
+                ["Relation Symbols", "Arrow Symbols", "Miscellaneous Symbols", "Delimiters and Accents",
+                "Greek Alphabet", "Functions", "Matrices & Systems", "Math Alphabets and Text"], "$$", "$$");
+        </script>
     </body>
 </html>
